@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dude Store - Services & Fournitures</title>
+  <style>
+    :root {
+      --main-color: #002244;
+      --accent-color: #25D366;
+      --bg-light: #f4f4f4;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: var(--bg-light);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--main-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 120px;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--main-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .contact, .map, .form-section {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 0.8rem 1.5rem;
+      background-color: var(--accent-color);
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact a:hover {
+      background-color: #1ea958;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    form {
+      background: white;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px var(--shadow);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: var(--main-color);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: var(--main-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="Logo Dude Store" />
+    <h1 style="color: rgb(255, 234, 0);">Dude Store</h1>
+    <p>Infographie | Sérigraphie | Bureautique | Fournitures | Dépannage</p>
+  </header>
+
+  <section>
+    <h2 style="background-color: rgb(255, 255, 0);">Nos Services</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/infographie.jpeg" alt="Infographie" />
+        <h3>Infographie</h3>
+        <p>Création de flyers, affiches, cartes, logos…</p>
+      </div>
+      <div class="card">
+        <img src="images/serigraphie.jpeg" alt="Sérigraphie" />
+        <h3>Sérigraphie</h3>
+        <p>Personnalisation de t-shirts, sacs, supports divers.</p>
+      </div>
+      <div class="card">
+        <img src="images/service bureautique.jpeg" alt="Service Bureautique" />
+        <h3>Service Bureautique</h3>
+        <p>Photocopies, saisie, impression, reliure…</p>
+      </div>
+      <div class="card">
+        <img src="images/fournitures.jpeg" alt="Fournitures" />
+        <h3>Consommables de bureau</h3>
+        <p>Vente de papiers, stylos, cartouches, clés USB…</p>
+      </div>
+      <div class="card">
+        <img src="images/depannage.jpeg" alt="Dépannage" />
+        <h3>Dépannage informatique</h3>
+        <p>Nettoyage, installation de logiciels, assistance.</p>
+      </div>
+      <div class="card">
+        <img src="images/photographie.jpeg" alt="photographie">
+        <h3>Photographie</h3>
+        <P>Photo d'identité, studio, montage photo…</P>
+      </div>
+      <div class="card">
+        <img src="images\materiel.jpeg" alt="Matériel de bureau" />
+        <h3>Matériel de bureau</h3>
+        <p>Fournitures pour les pros et particuliers.</p>
+      </div>
+    </div>
+    
+  </section>
+
+  <section>
+    <h2 style="background-color: rgb(255, 255, 0);">Autres services</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/telechargement.jpeg" alt="installation" />
+        <h3>Téléchargement de films, series,</h3>
+        <p>Nous installons pour vous des films, jeux, serie...</p>
+      </div>
+      <div class="card">
+        <img src="images/boissons.jpeg" alt="Boisson" />
+        <h3>vente de boissons</h3>
+        <p>Venez vous rafraichir chez nous avec plusieurs choix de boissons .</p>
+      </div>
+      <div class="card">
+        <img src="images/Conseils.png" alt="Conseils" />
+        <h3>Conseils</h3>
+        <p>Besoins d'aide ou assiastance? contactez nous ou rendez-vous sur place!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Discutez ou appelez-nous facilement :</p>
+    <a href="https://wa.me/237650424112" target="_blank">📱 WhatsApp</a>
+    <a href="tel:+237687126766">📞 Appeler</a>
+  </section>
+
+  <section class="map">
+    <h2>Nous Localiser</h2>
+    <iframe 
+      src="https://www.google.com/maps?q=Garoua,+Bibemiré,+Cameroun&output=embed" 
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <section class="form-section">
+    <h2>Envoyer un message</h2>
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message..." rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dude Store - Garoua, Cameroun</p>
+  </footer>
+
+</body>
+</html>
