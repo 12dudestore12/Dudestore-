@@ -141,6 +141,65 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .soutien-section {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .soutien-section h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .soutien-section p {
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .soutien-buttons a {
+      display: block;
+      margin: 10px auto;
+      max-width: 300px;
+      text-decoration: none;
+    }
+
+    .soutien-buttons button {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+      
+      
+    }
+
+    .orange-btn {
+      background-color: #ff9800;
+      
+    }
+
+    .mtn-btn {
+      background-color: #ffd900;
+      color: #000;
+
+    }
   </style>
 </head>
 <body>
@@ -181,7 +240,7 @@
       </div>
       <div class="card">
         <img src="images/photographie.jpeg" alt="photographie">
-        <h3>Photographie</h3>
+        <h3>Photographie (projet en cours)</h3>
         <P>Photo d'identité, studio, montage photo…</P>
       </div>
       <div class="card">
@@ -203,7 +262,7 @@
       </div>
       <div class="card">
         <img src="images/boissons.jpeg" alt="Boisson" />
-        <h3>vente de boissons</h3>
+        <h3>vente de boissons (Projet en cours)</h3>
         <p>Venez vous rafraichir chez nous avec plusieurs choix de boissons .</p>
       </div>
       <div class="card">
@@ -220,6 +279,26 @@
     <a href="https://wa.me/237650424112" target="_blank">📱 WhatsApp</a>
     <a href="tel:+237687126766">📞 Appeler</a>
   </section>
+  <section class="soutien-section">
+    <h2 style="background-color: rgb(175, 11, 11);color: rgb(255, 255, 255);padding: 10px;">🙏 Soutiens mon travail</h2>
+    <p>J'ai plusieurs projet en manques de financement... Vous pouvez m'encourager même avec 100 FCFA via Orange Money ou MTN Mobile Money. Clique sur ton opérateur :</p>
+
+    <div class="soutien-buttons">
+      <!-- Orange Money -->
+      <a href="tel:%23150*46*0779802%23">
+        <button class="orange-btn">📲 Soutenir via Orange Money</button>
+      </a>
+
+      <!-- MTN Mobile Money -->
+      <a href="tel:*126*1*1*650424112#">
+        <button class="mtn-btn">📲 Soutenir via MTN Mobile Money</button>
+      </a>
+    </div>
+
+    <p style="margin-top: 30px; font-size: 14px; color: #888;">
+      Merci pour ton soutien 💚
+    </p>
+  </section>
 
   <section class="map">
     <h2>Nous Localiser</h2>
@@ -231,12 +310,13 @@
 
   <section class="form-section">
     <h2>Envoyer un message</h2>
-    <form action="https://formsubmit.co/your@email.com" method="POST">
+    <form action="https://formsubmit.co/kleininasser@gmail.com" method="POST">
       <input type="text" name="name" placeholder="Votre nom" required>
       <input type="email" name="email" placeholder="Votre email" required>
       <textarea name="message" placeholder="Votre message..." rows="5" required></textarea>
       <button type="submit">Envoyer</button>
     </form>
+    
   </section>
 
   <footer>
